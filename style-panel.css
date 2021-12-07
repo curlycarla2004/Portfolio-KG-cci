@@ -1,0 +1,183 @@
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Roboto Condensed';
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.content {
+  background-color: #555;
+  height: 100%;
+  overflow-x: hidden;
+  min-width: 450px;
+}
+
+header {
+  min-height: 50px;
+  background-color: white;
+  color: black;
+  padding: 15px;
+}
+
+footer {
+  min-height: 50px;
+  background-color: white;
+  color: black;
+  padding: 15px;
+}
+
+#panelContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: #ebebeb;
+  color: #fff;
+  flex: 1;
+  overflow: hidden;
+}
+.panel {
+  position: relative;
+  width: 50%;
+}
+
+.slider {
+  z-index: 999999;
+  display: block;
+  position: absolute;
+  width: 10px;
+  background-color: white;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: visible;
+  user-select: none;
+}
+
+.slider::before {
+  content: "";
+  background-image: url('images/svg/left-arrow-svgrepo-com-2.svg');
+  position: absolute;
+  left: 0.25rem;
+  top: 50%;
+  height: 1.5rem;
+  width: 0.5rem;
+  background-color: black;
+  cursor: col-resize;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*-------------------------*/
+/* BUTTONS         
+/*-------------------------*/
+img.turn-page{
+  width: 5%;
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.btn-white-orange {
+  background-color: var(--orange);
+  border: 0.3rem solid ;
+  border-radius:20px;
+  color: white;
+  padding: 15px 100px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  background-image: linear-gradient(white, #000);
+  cursor: pointer; 
+  font-weight: bold;
+  margin-left: 30px;
+  margin-top: 4%;
+  display: inline-block;
+  
+}
+
+.btn-orange {
+  background-color: var(--orange);
+  border: 0.3rem solid ;
+  border-radius:20px;
+  color: white;
+  padding: 15px 200px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  background-image: linear-gradient(var(--orange), #742B10);
+  cursor: pointer; 
+  margin-left: 20%;
+  margin-top: 4%;
+  font-weight: bold;
+  display: inline-block;
+
+}
+
+.btn-orange:hover{
+  background: linear-gradient(180deg,#E85620 0%,#E85620 39.19700608860878%,#E85620 99.60089180339313%,rgba(37.3734010537647%,54.02580901115171%,17.471742763229063%,0.64) 99.60089180339313%);
+  color:var(--black);
+  border: 0.3rem solid black;
+  
+}
+
+.btn-white-orange:hover{
+  background: white;
+  color: var(--black);
+  border: 0.3rem solid var(--orange);
+}
+
+/*-------------------------*/
+/* MAIN SLIDER         
+/*-------------------------*/
+section#slider-basket.container{
+  height: 800px;
+  position: relative;
+}
+
+section#slider-basket{
+  background-image: url(images/kg-portoflio-main-header-basket-primary-image-resized.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  height: 700px;
+}
+
+span.text-change{
+  font-size: 45px;
+  letter-spacing:2px;
+}
+
+h1.header-h1{
+  margin-top:0%; 
+  padding-top: 10%;
+
+}
+
+.orange{
+  color: var(--orange);
+}
+
+h1.header-h1-basket{
+  margin-top:0%; 
+  padding-top: 10%;
+
+}
+

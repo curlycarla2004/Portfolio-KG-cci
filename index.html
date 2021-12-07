@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="web developpeur, web developer, symfony, php, wordpress, bootstrap, code, mobile, css, karla, gergelova, strasbourg, developement web, html, javascript" />
+    <meta name="author" content="Karla Gergelova" />
+    <meta name="description" content="Je m'appelle Karla Gergelova, je suis Développeur web à Strasbourg. Voici mon site web portfolio, CV et mélange de ma passion basketball." />
+    
+    <!-- WEBSITE TITLE -->
+    <title>Portfolio Karla Gergelova</title>
+
+    <!-- STYLESHEET -->
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/jpg" href="images/logo/kg-portfolio-logo-pro-favicon.ico"/>
+</head>
+
+<body>
+    <!-- SCROLL TO TOP BUTTON -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/kg-portoflio-scroll-top-button-icon.png" alt="scroll top button of arrow sign in a circle"></button>
+
+    <!-- HEADER - LOGO AND NAVIGATION-->
+    <header>
+        <section class="navigation">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="images/logo/kg-portfolio-logo-pro.svg" alt="logo for professional portfolio of the website" /></a>
+                
+                <nav id="main-navigation" class="my-navigation">
+                    <a href="index.html" class="dark-green">Accueil</a>
+                    <a href="#portfolio" class="green-on-hover">Portfolio</a>
+                    <a href="cv.html" class="green-on-hover">CV</a>
+                    <a href="basket.html" class="green-on-hover">Basketball</a>
+                    <a href="#contact" class="green-on-hover">Contact</a>
+                    <a href="https://www.linkedin.com/in/karla-gergelova/" class="linkedin green-on-hover"><img src="images/svg/kg-portfolio-linkedin-icon-black.svg" alt="linkedin icon black and white"></a>
+                    <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a> -->
+                </nav>
+            </div>
+        </section>
+    </header>
+   
+    <!-- MAIN SLIDER -->
+    <section id="slider">
+        <div class="container">
+            <p class="html-tag"></p>
+            <h1 class="header-h1">Coucou,<br> Je m'appelle <span class="dark-green big">K</span>arla, <span id="text-change"></span></h1>
+            <button class="btn-green uppercase" onclick="window.location.href = 'index.html#portfolio';">
+                <a href="index.html#portfolio">Portfolio</a>
+            </button>
+            <button class="btn-white uppercase" onclick="window.location.href = 'index.html#contact';">
+                <a href="index.html#contact">Contact me!</a>
+            </button>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>mon portfolio</h2>
+            <p class="under-h2-text">Bienvenue dans mon portfolio ! Je suis très heureuse de vous présenter mes travaux que j'ai créés depuis que j'ai obtenu mon diplôme Bac+2 en 2020. 
+                Certes il y a beaucoup de progrès à faire sur tous ces sites mais j'ai fait de mon mieux au moment de la création. Quatre d'entre eux sont créés avec <i>Symfony</i> et deux avec <i>Wordpress</i>. <br><br>
+                Tout d'abord, j'ai créé <b>Yom yoga</b> qui a été le projet d'un ami professeur de yoga. Le projet a été fait avec Symfony et il y a une interface d'administration pour qu'elle puisse changer le contenu du site et ajouter 
+                des articles de son blog.<br><br>
+                Le deuxième projet a été un site wordpress <b>Caravane médicale</b> fait pour un médecin qui va faire le tour du monde avec caravane médicale, et j'ai fait ce site pendant mon stage en Digitics.<br><br>
+                Le troisième site que j'ai créé est <b>mon portfolio </b>également créé avec symfony.<br><br>
+                Le quatrième projet appelé <b>Nydo</b> est un site Internet pour un ami qui fait la rénovation des maisons et qui souhaitait présenter ses travaux. Ce site est également fait avec Symfony et il a une interface 
+                d'administration pour ajouter des articles sur de nouveaux projets.<br><br>
+                Le cinquième projet a été réalisé pour un ami qui a son entreprise appelée <b>SEMER</b> qui aide les enfants qui ont des problèmes de comportement. Cela a également été fait avec symfony mais il n'y a pas 
+                l'interface d'administration. <br><br>
+                Le dernier site <b>Villa Alsace</b> a été réalisé avec Wordpress pour un propriétaire qui loue des maisons en Alsace.
+            </p>
+            <section class="articles">
+                 <section class="all-articles">
+                    <article class="single-article">
+                        <div class="article-content">
+                            <img src="images/kg-mockup/kg-portfolio-kg-mockup.jpg" class="image" alt="kg old portfolio website mockup with flower deco on a table ordi,ipad et mobile">
+                            <div class="middle">
+                                <div class="text">
+                                    <a href="https://karlagergelova.com/" target="_blank">Karla Gergelova portfolio</a><br><br>
+                                    <p>Mon premier portfolio personnel</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="single-article">
+                        <div class="article-content">
+                            <img src="images/kg-mockup/kg-portfolio-caravane-mockup.jpg" class="image" alt="caravane medicale website mockup with flower deco on a table ordi,ipad et mobile">
+                            <div class="middle">
+                                <div class="text">
+                                    <a href="https://www.lacaravanemedicale.com/fr/" target="_blank">Caravane médicale</a><br><br>
+                                    <p>Site internet pour un médecine en tour du monde solidaire</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="single-article">
+                        <div class="article-content">
+                            <img src="images/kg-mockup/kg-portfolio-nydo-mockup.jpg" class="image" alt="nydo website mockup with flower deco on a table ordi,ipad et mobile">
+                            <div class="middle">
+                                <div class="text">
+                                    <a href="https://www.nydo.cz" target="_blank">NYDO website</a><br><br>
+                                    <p>Site internet d'une entreprise spécialisée dans la renovation des vielles maisons en République Tchéque</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="single-article">
+                        <div class="article-content">
+                            <img src="images/kg-mockup/kg-portfolio-semer-mockup.jpg" class="image" alt="semer website mockup with flower deco on a table ordi,ipad et mobile">
+                            <div class="middle">
+                                <div class="text">
+                                    <a href="https://serviceeducatif.com/" target="_blank">SEMER</a><br><br>
+                                    <p>Site internet pour le Service Educatif et Mission d'Encadrement Renforcé à Strasbourg</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="single-article">
+                        <div class="article-content">
+                            <img src="images/kg-mockup/kg-portfolio-villa-mockup.jpg" class="image" alt="villa alsace website mockup with flower deco on a table ordi,ipad et mobile">
+                            <div class="middle">
+                                <div class="text">
+                                    <a href="https://www.villa-alsace.com/" target="_blank">Villa Alsace</a><br><br>
+                                    <p>Site internet d'un propriétaire des accomodation en Alsace à louer </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="single-article">
+                        <div class="article-content">
+                            <img src="images/kg-mockup/kg-portfolio-yom-mockup.jpg" class="image" alt="yom yoga website mockup with flower deco on a table ordi,ipad et mobile">
+                            <div class="middle">
+                                <div class="text">
+                                    <a href="https://www.yom-yoga.com/" target="_blank">YOM Yoga</a><br><br>
+                                    <p>Site internet pour un professeur de yoga au Danemark</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </section>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="container">
+            <h2>tous à propos de moi</h2>
+            <div class="left-column-one">
+               <p class="under-h2-text">De nationalité Tchèque, j’ai vécu 5 ans aux Etats-Unis. J'ai concilié mes études supérieures et mon apprentissage en gestion 
+                   et administration hôtelière tout en jouant dans la plus haute ligue de basketball des USA . Je suis ensuite devenue joueuse professionnelle en République 
+                   Tchèque. En 2013, j’ai décidé d’apprendre le français et j’ai quitté mon pays pour venir jouer en France.<br><br>Après quelques années à jouer au basket à un 
+                   niveau professionnel et semi-professionnel, tout en travaillant dans l'industrie hôtelière (et quelques autres également), j'ai décidé que j'aimerais savoir 
+                   comment tous ces différents systèmes que nous avons utilisés dans l'industrie ont été réellement utilisés dans le backend. J'ai toujours aimé apprendre et acquérir 
+                   la connaissance de nouveaux systèmes, c'est pourquoi je me suis intéressé à la programmation de logiciels. J'adore me mettre au défi et utiliser mon cerveau dans une 
+                   capacité différente.<br><br>Pour ces raisons j'ai décidé de prendre le temps à poursuivre mon grand intérêt pour le développement web. 
+                J’ai suivi un programme accéléré en développement web et mobile chez WebForce3 en 2020. J’ai effectué mon stage dans une agence web appelée Digitics puis j’ai obtenu mon 
+                diplôme Bac +2 en Développement Web et Mobile.<br><br>
+                Je joue encore au basket de manière semi-professionnelle en ce moment, mais je suis entrain de suivre une formation de Développeur intégrateur PHP Symfony Wordpress chez 
+                CCI campus pour obtenir mon Bac +3 en Concepteur Développeur d’applications.
+                </p> 
+            </div>
+            <div class="right-column-one">
+                <img src="images/kg-portfolio-sketch-karla-transparent-background.png" alt="sketch image of karla with transparent background" id="karla-sketch" onmouseover=passageDeLaSouris(this); onmouseout=departDeLaSouris(this); >
+            </div>
+        </div>
+    </section>       
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <div class="container">
+            <h2>mes compéténces</h2>
+            <p class="under-h2-text">Vous pouvez voir mon auto-évaluation de mes compétences dans le monde des développeurs ici, mais gardez à l'esprit qu'il est difficile de s'auto-évaluer. 
+                Je pense donc que la meilleure façon de tester mes compétences est de le faire vous-même directement. Je suis prêt et ouvert pour apprendre de plus en plus et également approfondir mes compétences si vous m'en donnez l'opportunité.
+            </p>
+            <div class="skills">
+                <div class="right-column-skills">
+                    <li>
+                        <h3>HTML5</h3><span class="bar"><span class="html"></span></span>
+                    </li>
+
+                    <li>
+                        <h3>CSS</h3><span class="bar"><span class="css"></span></span>
+                    </li>
+
+                    <li>
+                        <h3>JavaScript</h3><span class="bar"><span class="js"></span></span>
+                    </li>
+
+                    <li>
+                        <h3>PHP</h3><span class="bar"><span class="php"></span></span>
+                    </li>
+
+                    <li>
+                        <h3>MySQL</h3><span class="bar"><span class="mysql"></span></span>
+                    </li>
+                </div>
+
+                <div class="left-column-skills">
+                    <li>
+                        <h3>Symfony</h3><span class="bar"><span class="symfony"></span></span>
+                    </li>
+
+                    <li>
+                        <h3>Wordpress</h3><span class="bar"><span class="wordpress"></span></span>
+                    </li>
+
+                    <li>
+                        <h3>Adobe Photoshop</h3><span class="bar"><span class="photoshop"></span></span>
+                    </li>
+
+                    <li>
+                        <h3>Adobe Xd</h3><span class="bar"><span class="adobe-xd"></span></span>
+                    </li>
+
+                    <li>
+                        <h3>Adobe Illustrator</h3><span class="bar"><span class="adobe-ill"></span></span>
+                    </li>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="container contact">
+            <h2>contactez-moi</h2>
+            <p class="under-h2-text">Je suis actuellement à la recherche d'un stage à partir de mars 2022. Si vous êtes intéressé à m'avoir dans votre équipe, ne hésitez pas à me contacter.<br>
+                Ou ne hésitez pas à dire bonjour. J'aime ça aussi.
+            </p>
+            <div class="contact-form">
+                <form method="post" action="https://formspree.io/f/xnqlykoy">
+                    <label for="fname">Nom et prénom</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
+
+                    <label for="email-address">Email</label>
+                    <input type="email" id="email-address" name="email" placeholder="Votre addresse email">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+                    
+                    <label for="checkbox" class ="checkbox">En cochant cette case, vous acceptez que vos informations soient traitées par des tiers.</label>
+                    <input type="checkbox" id="checkbox" name="checkbox">
+
+                    <input type="submit" value="Envoyer mon message">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <section class="footer-content">
+                <a href="index.html"><img src="images/logo/kg-portfolio-logo-pro.svg" alt="logo for professional portfolio of the website" id="logo-footer"></a>
+                <div id="copyright">
+                    <span class="mentions-legales footer-font">karla gergelova 2021 © tout droits réservés • <a class="mentions-legales footer-font" href="mentions.html">mentions légales</a> • <a class="mentions-legales footer-font" href="politique.html">politique de confidentialité</a></span>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+    <!-- COOKIES -->
+    <div id="cookies-pop-up">
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <!-- <script src="purecookie.js"></script> -->
+    <script src="custom.js"></script>
+
+</body>
+</html>

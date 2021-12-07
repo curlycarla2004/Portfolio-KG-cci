@@ -1,0 +1,594 @@
+:root {
+  --dark-green: #61892f;
+  --light-green: #86c232;
+  --black: #222629;
+  --orange: #e85620;
+  --light-gray: #707070;
+  --very-light-green: #eaf8d9;
+  --light-orange: #ee8761;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--black);
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  font-size: 0;
+  box-sizing: border-box;
+}
+
+.container p,
+.container a,
+.container div,
+.container address,
+.container span {
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+span.big {
+  font-size: 55px;
+  vertical-align: inherit;
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.hidden{
+  display: none;
+}
+
+/*-------------------------*/
+/* TITLES AND LINKS         
+/*-------------------------*/
+h1 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 45px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Playfair Display";
+  color: var(--orange);
+  text-transform: uppercase;
+  padding-bottom: 4%;
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.orange {
+  color: var(--orange);
+}
+
+/*-------------------------*/
+/* BUTTONS         
+/*-------------------------*/
+img.turn-page {
+  width: 5%;
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.btn-white {
+  background-color: var(--orange);
+  border: 0.3rem solid;
+  border-radius: 20px;
+  color: white;
+  padding: 15px 100px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  background-image: linear-gradient(white, #000);
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-top: 4%;
+  display: inline-block;
+}
+
+.btn-orange {
+  background-color: var(--orange);
+  border: 0.3rem solid;
+  border-radius: 20px;
+  color: white;
+  padding: 15px 200px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  background-image: linear-gradient(var(--orange), #742b10);
+  cursor: pointer;
+  margin-left: 20%;
+  margin-top: 4%;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn-orange:hover {
+  background: linear-gradient(
+    180deg,
+    #e85620 0%,
+    #e85620 39.19700608860878%,
+    #e85620 99.60089180339313%,
+    rgba(37.3734010537647%, 54.02580901115171%, 17.471742763229063%, 0.64)
+      99.60089180339313%
+  );
+  color: var(--black);
+  border: 0.3rem solid black;
+}
+
+.btn-white:hover {
+  background: white;
+  color: var(--black);
+  border: 0.3rem solid var(--orange);
+}
+
+/*-------------------------*/
+/* HEADER LOGO NAVIGATION         
+/*-------------------------*/
+a.logo {
+  width: 20%;
+  display: inline-block;
+}
+
+a.linkedin img {
+  width: 3%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav#main-navigation {
+  display: inline-block;
+  text-align: right;
+  width: 80%;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+nav#main-navigation a {
+  margin: 0 14px;
+}
+
+.orange-on-hover:hover{
+  color:var(--orange);
+  filter: invert(46%) sepia(90%) saturate(3257%) hue-rotate(349deg)
+    brightness(94%) contrast(94%);
+}
+/*-------------------------*/
+/* MAIN SLIDER         
+/*-------------------------*/
+section#slider.container {
+  height: 800px;
+  position: relative;
+}
+
+section#slider {
+  background-image: url(images/kg-portoflio-main-header-basket-primary-image-resized.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  height: 700px;
+}
+
+span.text-change {
+  font-size: 45px;
+  letter-spacing: 2px;
+}
+
+h1.header-h1 {
+  margin-top: 0%;
+  padding-top: 20%;
+}
+
+/*-------------------------*/
+/* GALLERY     
+/*-------------------------*/
+/* Inspired by article i found on codepen.io - Flex image gallery with hover effect by Cynthia costa */
+.container-gallery {
+  max-width: 80%;
+  margin: 0 auto;
+  font-size: 0;
+  padding-top: 2%;
+  padding-bottom: 8%;
+}
+
+.gallery {
+  display: flex;
+  padding: 2px;
+  transition: 0.3s;
+}
+.gallery:hover .gallery__image {
+  filter: grayscale(1);
+}
+.gallery__column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.gallery__link {
+  margin: 2px;
+  overflow: hidden;
+}
+.gallery__link:hover .gallery__image {
+  filter: grayscale(0);
+}
+.gallery__link:hover .gallery__caption {
+  opacity: 1;
+}
+.gallery__thumb {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.gallery__image {
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+.gallery__image:hover {
+  transform: scale(1.1);
+}
+.gallery__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px 15px 15px;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: white;
+  opacity: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transition: 0.3s;
+}
+
+/*-------------------------*/
+/* ABOUT             
+/*-------------------------*/
+section#about {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -6px 6px -6px;
+  padding-top: 3%;
+  padding-bottom: 8%;
+}
+
+section#about .left-column-one {
+  display: inline-block;
+  width: 50%;
+}
+
+section#about .right-column-one {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+
+iframe {
+  width: 90%;
+}
+
+/*-------------------------*/
+/* HISTORY             
+/*-------------------------*/
+section#history {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -6px 6px -6px;
+  padding-top: 3%;
+  padding-bottom: 8%;
+}
+
+.basket-svg {
+  width: 3%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 2%;
+}
+
+.basket-svg-orange {
+  width: 3%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 2%;
+  filter: invert(46%) sepia(90%) saturate(3257%) hue-rotate(349deg)
+    brightness(94%) contrast(94%);
+}
+
+.img-history {
+  width: 80%;
+}
+
+section#history .left-column-one {
+  width: 50%;
+  display: inline-block;
+}
+
+section#history .right-column-one {
+  width: 50%;
+  display: inline-block;
+}
+
+.underline:hover {
+  text-decoration: underline;
+}
+
+.container a.underline {
+  vertical-align: baseline;
+}
+
+.container a.underline:hover{
+  color: var(--orange);
+}
+
+/*-------------------------*/
+/* CONTACT             
+/*-------------------------*/
+section#contact {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -6px 6px -6px;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  background-image: url(images/photo-basket/kg-porfolio-basket-contact-background-resized.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+}
+
+/* FORM */
+form {
+  margin: 0 auto;
+  width: 60%;
+  padding-top: 5%;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+/* submit button */
+input[type="submit"] {
+  background-color: var(--orange);
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 2%;
+}
+
+/* When moving the mouse over the submit button, add a lighter green color */
+input[type="submit"]:hover {
+  background-color: #ee7448;
+}
+
+label {
+  color: var(--light-gray);
+}
+
+label.checkbox{
+  position:relative;
+  padding: 0 0 0 2rem;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  
+}
+
+/*-------------------------*/
+/* FOOTER           
+/*-------------------------*/
+
+section.footer-content {
+  text-align: center;
+}
+
+img#logo-footer {
+  width: 12%;
+  display: inline-block;
+}
+
+.mentions-legales {
+  text-transform: capitalize;
+}
+
+footer {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -6px 6px -6px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.container a span {
+  vertical-align: baseline;
+}
+
+footer .container a {
+  vertical-align: baseline;
+}
+
+.container .footer-font {
+  font-size: 12px;
+}
+
+.mentions-legales a:hover {
+  text-decoration: underline;
+}
+
+/*-------------------------*/
+/* MENTIONS LEGALES             
+/*-------------------------*/
+section#mentions {
+  padding-top: 1%;
+  padding-bottom: 5%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -6px 6px -6px;
+}
+
+/*-------------------------*/
+/* POLITIQUE DE CONFIDENTIALITE            
+/*-------------------------*/
+section#politique {
+  padding-top: 1%;
+  padding-bottom: 5%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -6px 6px -6px;
+}
+
+ul.a {
+  list-style-type: circle;
+  color: var(--black);
+  font-size: 16px;
+}
+
+.container ul li {
+  list-style-type: circle;
+  padding-bottom: 1%;
+}
+
+/*-------------------------*/
+/* COOKIES BANNER    (done with PureCookie - JavaScript library that i found online)     
+/*-------------------------*/
+.cookieConsentContainer {
+  z-index: 999;
+  width: 300px;
+  min-height: 20px;
+  box-sizing: border-box;
+  padding: 15px 15px 15px 15px;
+  background: #232323;
+  overflow: hidden;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+}
+
+.cookieConsentContainer .cookieTitle a {
+  font-family: OpenSans, arial, "sans-serif";
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 20px;
+  display: block;
+}
+
+.cookieConsentContainer .cookieDesc p {
+  margin: 0;
+  padding: 0;
+  font-family: OpenSans, arial, "sans-serif";
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 20px;
+  display: block;
+  margin-top: 10px;
+}
+
+.cookieConsentContainer .cookieDesc a {
+  font-family: OpenSans, arial, "sans-serif";
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.cookieConsentContainer .cookieButton a {
+  display: inline-block;
+  font-family: OpenSans, arial, "sans-serif";
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 14px;
+  background: #000000;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  text-align: center;
+}
+
+.cookieConsentContainer .cookieButton a:hover {
+  cursor: pointer;
+  background: var(--orange);
+}
+
+@media (max-width: 980px) {
+  .cookieConsentContainer {
+    bottom: 0px !important;
+    left: 0px !important;
+    width: 100% !important;
+  }
+}
+
+/*-------------------------*/
+/* SCROLL TO TOP BUTTON             
+/*-------------------------*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--orange);
+  color: white;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 12px;
+}
+
+#myBtn:hover {
+  background-color: var(
+    --light-orange
+  ); /* Add a dark-grey background on hover */
+}
+
+
